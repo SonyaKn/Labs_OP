@@ -5,7 +5,7 @@
 using namespace std;
 int main()
 {
-    int eps, fact,res,i,viras;
+    int eps, fact,res,i;
     double sum; //сума початкова, сума нова
     setlocale(LC_ALL, "Ukrainian");
     cout << "Введіть значення точності еps" << endl;
@@ -13,12 +13,14 @@ int main()
     sum = 0;
     fact = 1; //факторіал 
     i = 1;
+    double virasp = 0;
+    double virasn;
     do {
         fact = fact * i;    
-        viras= (pow((-2), i) / fact);
-        res = (pow((-2), i) / fact) - (pow((-2), (i - 1))/ (fact / i));
-        sum = sum + viras; 
-                   
+        virasn= (pow((-2), i) / fact);
+        res = virasn - virasp;
+        sum = sum + virasn; 
+        virasp = virasn;
         i++;
                     
     } while (abs(res) >= eps); //визначення точності
