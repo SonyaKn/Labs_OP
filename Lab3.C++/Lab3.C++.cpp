@@ -17,7 +17,6 @@ int main()
         fact = fact * i;    
         viras= (pow((-2), i) / fact);
         res = (pow((-2), i) / fact) - (pow((-2), (i - 1))/ (fact / i));
-        cout << res<<endl;
         sum = sum + viras; 
                    
         i++;
