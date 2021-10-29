@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int eps, fact,res,i;
-    double sum; //сума початкова, сума нова
+    double sum; 
     setlocale(LC_ALL, "Ukrainian");
     cout << "Введіть значення точності еps" << endl;
     cin >> eps;
@@ -18,11 +18,11 @@ int main()
     do {
         fact = fact * i;    
         virasn= (pow((-2), i) / fact);
-        res = virasn - virasp;
+        res = abs(virasn - virasp);
         sum = sum + virasn; 
         virasp = virasn;
         i++;
                     
-    } while (abs(res) >= eps); //визначення точності
+    } while (res >= eps); //визначення точності
     cout << "Значення суми виразу = " << sum << endl;
 }
