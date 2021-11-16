@@ -19,6 +19,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab5.C++", "Lab5.C++\Lab5.C
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Lab5.Python", "Lab5.Python\Lab5.Python.pyproj", "{009191BE-AE6F-4B8C-A8A2-9EFBF5D2919F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab6.C++", "Lab6.C++\Lab6.C++.vcxproj", "{B81C3E9E-7DF8-4822-8972-73B2D78E7550}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Lab6.Python", "Lab6.Python\Lab6.Python.pyproj", "{6A936990-5957-4AE3-A9B0-E7C2FD5395EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,22 @@ Global
 		{009191BE-AE6F-4B8C-A8A2-9EFBF5D2919F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{009191BE-AE6F-4B8C-A8A2-9EFBF5D2919F}.Release|x64.ActiveCfg = Release|Any CPU
 		{009191BE-AE6F-4B8C-A8A2-9EFBF5D2919F}.Release|x86.ActiveCfg = Release|Any CPU
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Debug|x64.ActiveCfg = Debug|x64
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Debug|x64.Build.0 = Debug|x64
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Debug|x86.ActiveCfg = Debug|Win32
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Debug|x86.Build.0 = Debug|Win32
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Release|Any CPU.ActiveCfg = Release|Win32
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Release|x64.ActiveCfg = Release|x64
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Release|x64.Build.0 = Release|x64
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Release|x86.ActiveCfg = Release|Win32
+		{B81C3E9E-7DF8-4822-8972-73B2D78E7550}.Release|x86.Build.0 = Release|Win32
+		{6A936990-5957-4AE3-A9B0-E7C2FD5395EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A936990-5957-4AE3-A9B0-E7C2FD5395EA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6A936990-5957-4AE3-A9B0-E7C2FD5395EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A936990-5957-4AE3-A9B0-E7C2FD5395EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A936990-5957-4AE3-A9B0-E7C2FD5395EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{6A936990-5957-4AE3-A9B0-E7C2FD5395EA}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
