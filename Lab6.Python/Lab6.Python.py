@@ -4,12 +4,11 @@ def palindrom(k):
     n=0
     for i in range(k):
         pal=0
-        chislo=random.randint(1,10000)
-        c=chislo
-        while c:
-            pal=10*pal+ c%10
-            c=c//10
-        if chislo==pal:
+        chislo=i
+        while chislo:
+            pal=10*pal+ chislo%10
+            chislo=chislo//10
+        if i==pal:
             n+=1
     return n
 

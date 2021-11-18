@@ -4,18 +4,17 @@ using namespace std;
 int palindrom(int k)
 {
     int n = 0;
-    for (int i = 0; i < k; i++)
+    for (int i = 1; i <= k; i++)
     {
       
         int pal = 0;
-        int chislo = 1 + rand() % 10000;
-        int c = chislo;
-        while (c)
+        int chislo =i;
+        while (chislo)
         {
-            pal = 10 * pal + c % 10;
-            c /= 10;
+            pal = 10 * pal + chislo % 10;
+            chislo /= 10;
         }
-        if (chislo == pal)
+        if (i == pal)
         {
             n++;
         }
