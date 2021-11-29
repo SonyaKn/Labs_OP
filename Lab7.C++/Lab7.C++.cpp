@@ -13,7 +13,7 @@ int function(int max, int kilkist, int kol, int masuv[])  //кількість �
 {
     for (int i = 0; i < kilkist; i++)
     {
-        if (i % 2 == 0)
+        if ((i % 2 == 0)&&(i!=0))
         {
             if (masuv[i] % 2 != 0)
             {
