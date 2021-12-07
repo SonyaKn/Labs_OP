@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 using namespace std;
 
-int palindrom(int k)
+int palindrom(int k) 
 {
     int n = 0;
     for (int i = 1; i <= k; i++)
