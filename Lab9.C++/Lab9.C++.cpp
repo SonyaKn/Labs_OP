@@ -30,7 +30,7 @@ int kolvo_slov(char s[80])
 }
 int main()
 {
-    char str[80]="hello; you sweetie little mini pig; bye";
+    char str[80]="hello; я учу язык программирования C++; bye";
     cout << "Kolvo slov:   " << kolvo_slov(str);
 }
 
