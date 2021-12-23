@@ -1,4 +1,6 @@
-﻿#include <iostream>
+﻿//в кінцевому результаті елементи головної діагоналі йдуть по зростанню
+
+#include <iostream>
 #include<iomanip>
 using namespace std;
 void input(int size_f, double a[6][6])
@@ -31,15 +33,14 @@ void func(int size_f, double a[6][6])
                 imin = j;
             }
         }
-        if (imin != i) 
-        {
+        
             for (int j = 0; j < size_f; j++) 
             {
                 temp = a[j][imin];
                 a[j][imin] = a[j][i];
                 a[j][i] = temp;
             }
-        }
+        
 
     }
 }
