@@ -21,7 +21,7 @@ void func(int size_f, double a[6][6], double el_df[6])
 {
     for (int i = 0; i < size_f; i++)
     {
-        el_df[i] = a[i][i];                //масив елементів голловної діагоналі
+        el_df[i] = a[i][i];                         //масив елементів голловної діагоналі
     }
     double temp;
     for (int j = 0; j < size_f; j++)
