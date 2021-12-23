@@ -17,21 +17,32 @@ void input(int size_f, double a[6][6])
 }
 void func(int size_f, double a[6][6])
 {
-    double temp;
-    int k = 0;
-    for (int j = 0; j < size_f - 1; j++)
+    double min, temp;
+    int imin;
+    for (int i = 0; i <size_f; i++)
     {
-        if (a[j][j] > a[j + 1][j + 1])
+        min = a[i][i];
+        imin = i;
+        for (int j = i; j < size_f; j++) 
         {
-            for (int i = 0; i < size_f; i++)
+            if (min > a[i][j]) 
             {
-                temp = a[i][j];
-                a[i][j] = a[i][j + 1];
-                a[i][j + 1] = temp;
+                min = a[i][j];
+                imin = j;
             }
-           
         }
+        if (imin != i) 
+        {
+            for (int j = 0; j < size_f; j++) 
+            {
+                temp = a[j][imin];
+                a[j][imin] = a[j][i];
+                a[j][i] = temp;
+            }
+        }
+
     }
+}
 void output(int size_f, double a[6][6])
 {
     for (int i = 0; i < size_f; i++)
