@@ -53,6 +53,10 @@ int main()
     cout << "Vvedit rozmir masuva:  "<<endl;
     cin >> size;
     double **arr=new double *[size], *el_d=new double [size];
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = new double[size];
+    }
     input(size, arr);
     func(size, arr, el_d);
     delete[] el_d;
