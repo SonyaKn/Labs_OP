@@ -3,7 +3,7 @@
 #include <iostream>
 #include<iomanip>
 using namespace std;
-void input(int size_f, double a[6][6])
+void input(int size_f, double **a)
 {
     for (int i = 0; i < size_f; i++)
     {
@@ -17,7 +17,7 @@ void input(int size_f, double a[6][6])
     }
     cout << endl;
 }
-void func(int size_f, double a[6][6], double el_df[6])
+void func(int size_f, double **a, double *el_df)
 {
     for (int i = 0; i < size_f; i++)
     {
@@ -36,7 +36,7 @@ void func(int size_f, double a[6][6], double el_df[6])
         }
     }
 }
-void output(int size_f, double a[6][6])
+void output(int size_f, double **a)
 {
     for (int i = 0; i < size_f; i++)
     {
@@ -49,11 +49,12 @@ void output(int size_f, double a[6][6])
 }
 int main()
 {
-    const int size = 6;
-    double arr[size][size], el_d[size];
-
+    int size;
+    cout << "Vvedit rozmir masuva:  "<<endl;
+    cin >> size;
+    double **arr=new double *[size], *el_d=new double [size];
     input(size, arr);
     func(size, arr, el_d);
+    delete[] el_d;
     output(size, arr);
-
 }
